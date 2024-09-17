@@ -1,0 +1,283 @@
+/* ========================= */
+/* Estilos Globais */
+/* ========================= */
+:root {
+    --cor-fundo: #28272e;
+    --cor-texto: #333;
+    --cor-botao: #2d2f92;
+    --cor-botao-hover: #646eca;
+    --cor-input-borda: #ccc;
+    --cor-detalhes-fundo: white;
+    --cor-header: #26509e;
+    --cor-footer: #08111f;
+    --cor-texto-branco: #ffffff;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    color: var(--cor-texto);
+}
+
+/* ========================= */
+/* Estilos do Formulário de Equipamentos */
+/* ========================= */
+.equipment-form {
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.equipment-filter {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    margin: 1.25em; /* 20px */
+}
+
+.equipment-filter input {
+    padding: 0.625em; /* 10px */
+    width: 18.75em; /* 300px */
+    margin-right: 0.625em; /* 10px */
+}
+
+.equipment-filter select {
+    padding: 0.625em; /* 10px */
+    margin-left: 0.625em; /* 10px */
+}
+
+/* ========================= */
+/* Estilos dos Botões */
+/* ========================= */
+button {
+    background-color: var(--cor-botao); 
+    border: none;
+    color: var(--cor-texto-branco);
+    padding: 0.9375em 2em; /* 15px 32px */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em; /* 16px */
+    border-radius: 0.75em; /* 12px */
+    transition: background-color 0.3s; 
+}
+
+button:hover {
+    background-color: var(--cor-botao-hover); 
+}
+
+/* ========================= */
+/* Estilos dos Inputs de Texto */
+/* ========================= */
+input[type="text"] {
+    padding: 0.625em; /* 10px */
+    border: 0.125em solid var(--cor-input-borda); /* 2px */
+    border-radius: 0.5em; /* 8px */
+    font-size: 1em; /* 16px */
+    transition: border-color 0.3s; 
+}
+
+input[type="text"]:focus {
+    border-color: #24338b; 
+    outline: none; 
+}
+
+/* ========================= */
+/* Estilos do Mapa */
+/* ========================= */
+.map-container {
+    display: flex; /* Usar Flexbox para centralizar */
+    justify-content: center; /* Centralizar horizontalmente */
+    align-items: center; /* Centralizar verticalmente */
+    flex: 1; /* O mapa ocupa o espaço restante */
+    height: 500px; /* Definir uma altura fixa para o mapa */
+    margin: 3em 0; /* Espaçamento vertical ao redor do mapa */
+}
+
+/* ========================= */
+/* Estilos de Detalhes do Equipamento */
+/* ========================= */
+.equipment-details {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    border-radius: 0.625em; /* 10px */
+    border: 0.125em solid #ccc; /* 1px */
+    padding: 0.9375em; /* 15px */
+    background-color: var(--cor-detalhes-fundo);
+    box-shadow: 0 0.125em 0.625em rgba(0, 0, 0, 0.1); /* 0 2px 10px */
+    position: absolute; 
+    top: 40%; /* 20px */
+    right: 1.25em; /* 20px */
+    z-index: 1000; 
+    width: 18.75em; /* 300px */
+}
+
+/* ========================= */
+/* Estilos do Contêiner de Pesquisa */
+/* ========================= */
+.search-container {
+    display: flex;
+    justify-content: center; 
+    margin: 1.25em; /* 20px */
+}
+
+/* ========================= */
+/* Estilos para Dispositivos Móveis */
+/* ========================= */
+@media (max-width: 48em) { /* 768px */
+    .equipment-form {
+        flex-direction: column; 
+        align-items: stretch; 
+    }
+
+    .equipment-filter {
+        flex-direction: column; 
+        align-items: stretch; 
+    }
+
+    .equipment-filter input,
+    .equipment-filter select {
+        width: 100%; 
+        margin: 0.3125em 0; /* 5px 0 */
+    }
+
+    .equipment-details {
+        width: 90%; 
+        right: 0.3125em; /* 5px */
+        top: 0.625em; /* 10px */
+    }
+
+    .map-container {
+        width: 100%; /* Garantir que o mapa ocupe 100% da largura */
+        height: 18.75em; /* 300px */
+    }
+
+    button {
+        width: 100%; 
+    }
+}
+
+/* ========================= */
+/* Estilos do Header e Footer */
+/* ========================= */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Ocupa toda a altura da tela */
+}
+
+.app-header {
+    background-color: var(--cor-header);
+    color: var(--cor-texto-branco);
+    padding: 1em;
+    text-align: center;
+}
+
+.filter-container {
+    margin: 1em; /* Espaçamento entre o filtro e o cabeçalho */
+}
+
+.add-equipment-header {
+    margin: 1em 0; /* Espaçamento acima e abaixo do cabeçalho */
+}
+
+.equipment-form-container {
+    margin: 0em; /* Espaçamento acima e abaixo do formulário */
+}
+
+.app-footer {
+    background-color: var(--cor-footer);
+    color: var(--cor-texto-branco);
+    padding: 1em;
+    text-align: center;
+    margin-top: auto;
+}
+
+.add-equipment-header h2 {
+    color: var(--cor-texto-branco);
+    text-align: center;
+    margin: 0.2em;
+    
+}
+
+.app-header h1 {
+    color: var(--cor-texto-branco);
+    text-align: center;
+    margin: 2em; /* 20px */
+}
+
+.spacer {
+    height: 0em;
+}
+
+.header-logo {
+    max-width: 15%;
+    height: auto;
+}
+
+.leaflet-map {
+    width: 60%; /* Garantir que o mapa ocupe 100% da largura */
+    height: 110%; /* Garantir que o mapa ocupe 100% da altura do contêiner */
+    border: 2px solid #ccc;
+    border-radius: 15px;
+}
+
+/* Estilos para o Popup do Leaflet */
+.leaflet-popup {
+    background-color: white; /* Fundo branco para o popup */
+    border-radius: 10px; /* Bordas curvas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidade */
+    min-width: 200px; /* Largura mínima do popup */
+    max-width: 300px; /* Largura máxima do popup */
+    text-align: left; /* Alinhamento do texto à esquerda */
+}
+
+.leaflet-popup h3 {
+    margin: 0; /* Remover margens do título */
+    font-size: 1.2em; /* Tamanho da fonte do título */
+}
+
+.leaflet-popup p {
+    margin: 0; /* Remover margens do parágrafo */
+    font-size: 0.9em; /* Tamanho da fonte do texto */
+}
+
+.leaflet-popup button {
+    background-color: var(--cor-botao); /* Usar a cor do botão definida */
+    color: var(--cor-texto-branco); /* Cor do texto do botão */
+    border: none; /* Remover borda padrão */
+    border-radius: 5px; /* Bordas curvas no botão */
+    padding: 5px 10px; /* Espaçamento interno do botão */
+    cursor: pointer; /* Mudar o cursor para indicar que é clicável */
+    transition: background-color 0.3s; /* Transição suave para hover */
+}
+
+.leaflet-popup button:hover {
+    background-color: var(--cor-botao-hover); /* Cor do botão ao passar o mouse */
+}
+
+/* Ajustes para o alinhamento do popup */
+.leaflet-popup-content {
+    display: flex;
+    flex-direction: column; /* Organizar o conteúdo em coluna */
+    align-items: flex-start; /* Alinhar o conteúdo à esquerda */
+}
+
+.equipment-details-container {
+    position: absolute; 
+    top: 50%; /* Centralizar verticalmente */
+    right: 20px; /* Distância da borda direita */
+    background: white; /* Fundo branco */
+    padding: 20px; /* Espaçamento interno */
+    border: 1px solid #ccc; /* Borda cinza */
+    z-index: 1000; /* Manter acima de outros elementos */
+    width: 300px; /* Largura fixa */
+    border-radius: 10px; /* Bordas curvas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade */
+}

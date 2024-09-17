@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# Gerenciador de Equipamentos
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bem-vindo ao **Gerenciador de Equipamentos**, uma aplicação desenvolvida em React que permite gerenciar e visualizar equipamentos de forma interativa e intuitiva. Este projeto foi criado para facilitar a adição, remoção e visualização de equipamentos em um mapa, proporcionando uma experiência de usuário fluida e responsiva.
 
-## Available Scripts
+## Funcionalidades
 
-In the project directory, you can run:
+### 1. **Gerenciamento de Equipamentos**
+- **Adicionar Equipamentos**: Insira novos equipamentos com informações detalhadas, como nome, modelo e endereço. A aplicação utiliza a API do OpenStreetMap para buscar a localização exata do equipamento.
+- **Remover Equipamentos**: Remova equipamentos indesejados da lista com um simples clique.
 
-### `npm start`
+### 2. **Filtragem de Equipamentos**
+- **Filtro por Nome e Status**: Encontre rapidamente equipamentos utilizando a barra de pesquisa. Você pode filtrar por status, como "Operando", "Parado" ou "Manutenção", para visualizar apenas os equipamentos relevantes.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 3. **Exibição de Mapa Interativo**
+- **Localização em Tempo Real**: Visualize a localização dos equipamentos em um mapa interativo, utilizando a biblioteca Leaflet. Os marcadores no mapa mostram onde cada equipamento está localizado, facilitando a gestão espacial.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 4. **Detalhes do Equipamento**
+- **Visualização de Informações**: Clique em um equipamento no mapa para visualizar detalhes adicionais, como nome, status e modelo, permitindo uma gestão mais informada.
 
-### `npm test`
+### 5. **Responsividade**
+- **Design Adaptável**: A aplicação foi projetada para ser responsiva, garantindo uma experiência de usuário consistente em diferentes dispositivos, desde desktops até smartphones.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tecnologias Utilizadas
+- **React**: Para construção da interface de usuário.
+- **Leaflet**: Para a implementação do mapa interativo.
+- **Axios**: Para realizar requisições HTTP e buscar dados de localização.
+- **CSS**: Para estilização e layout da aplicação.
 
-### `npm run build`
+## Contribuição
+Sinta-se à vontade para contribuir com melhorias ou novas funcionalidades. Se você encontrar algum bug ou tiver sugestões, não hesite em abrir uma issue no repositório.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Licença
+Este projeto está licenciado sob a MIT License. Veja o arquivo LICENSE para mais detalhes.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Agradeço por conferir o **Gerenciador de Equipamentos**! Espero que esta aplicação esteja de acordo com os requisitos do teste.
